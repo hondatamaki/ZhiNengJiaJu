@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.Demo.BedroomActivity"
+    android:background="@drawable/bg_2">
+
+    <Button
+        android:id="@+id/backup"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/ic_back_normal"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="36dp"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:text="卧室" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout3">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="人脸考勤"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:layout_marginLeft="70dp"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:text="姓名："
+            android:textSize="15dp"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:text=""
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_name"
+            android:layout_marginLeft="93dp"
+            android:layout_marginStart="93dp"
+            android:layout_toEndOf="@+id/tv_name"
+            android:layout_toRightOf="@+id/tv_name"
+            android:text="时间："
+            android:textColor="#fff"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/textView6"
+            android:layout_toRightOf="@+id/textView6"
+            android:text=""
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/btn_chaxun"
+            android:layout_width="65dp"
+            android:gravity="center"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="222dp"
+            android:layout_marginStart="600dp"
+            android:background="#535b5c"
+            android:text="查询"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/backup"
+        android:layout_marginRight="240dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="90dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_sensor"
+                android:layout_marginLeft="60dp">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="光照度"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="Lux"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="60dp"
+                    android:textColor="#fff"
+                    />
+
+                <TextView
+                    android:id="@+id/bedroom_guangzhao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView11"
+                    android:layout_alignLeft="@+id/textView8"
+                    android:layout_alignStart="@+id/textView8"
+                    android:layout_marginLeft="25dp"
+                    android:textSize="20dp"
+                    android:text=""
+                    android:textColor="@android:color/holo_orange_dark" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_sensor"
+                android:layout_marginLeft="60dp">
+
+                <TextView
+                    android:id="@+id/textView81"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="温度"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/textView111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="℃"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="60dp"
+                    android:textColor="#fff"
+                    />
+
+                <TextView
+                    android:id="@+id/bedroom_wendu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView111"
+                    android:layout_alignLeft="@+id/textView81"
+                    android:layout_alignStart="@+id/textView81"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:text=""
+                    android:textColor="@android:color/holo_orange_dark" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_sensor"
+                android:layout_marginLeft="60dp">
+
+                <TextView
+                    android:id="@+id/textView82"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="湿度"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/textView112"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="%"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="60dp"
+                    android:textColor="#fff"
+                    />
+
+                <TextView
+                    android:id="@+id/bedroom_shidu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView112"
+                    android:layout_alignLeft="@+id/textView82"
+                    android:layout_alignStart="@+id/textView82"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20dp"
+                    android:text=""
+                    android:textColor="@android:color/holo_orange_dark" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_sensor"
+                android:layout_marginLeft="60dp">
+
+                <TextView
+                    android:id="@+id/textView83"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="PM2.5"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/textView113"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="μg/m3"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="60dp"
+                    android:textColor="#fff"
+                    />
+
+                <TextView
+                    android:id="@+id/bedroom_pm25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView113"
+                    android:layout_alignLeft="@+id/textView83"
+                    android:layout_alignStart="@+id/textView83"
+                    android:layout_marginLeft="35dp"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textColor="@android:color/holo_orange_dark" />
+            </RelativeLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_sensor"
+                android:layout_marginLeft="60dp">
+
+                <TextView
+                    android:id="@+id/textView84"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="二氧化碳"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/textView114"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="ppm"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="60dp"
+                    android:textColor="#fff"
+                    />
+
+                <TextView
+                    android:id="@+id/bedroom_co2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView114"
+                    android:layout_alignLeft="@+id/textView84"
+                    android:layout_alignStart="@+id/textView84"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="20dp"
+                    android:text=""
+                    android:textColor="@android:color/holo_orange_dark" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_sensor"
+                android:layout_marginLeft="60dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="10dp"
+                    app:srcCompat="@drawable/door_icon" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imageView3"
+                    android:layout_alignStart="@+id/imageView3"
+                    android:layout_below="@+id/imageView3"
+                    android:text="门禁"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ToggleButton
+                    android:id="@+id/bedroom_menjin"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="50dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:button="@drawable/kg"
+                    android:background="@null"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_sensor"
+                android:layout_marginLeft="60dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="10dp"
+                    app:srcCompat="@drawable/air_conditioner_icon" />
+
+                <TextView
+                    android:id="@+id/textView131"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imageView31"
+                    android:layout_alignStart="@+id/imageView31"
+                    android:layout_below="@+id/imageView31"
+                    android:text="空调"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ToggleButton
+                    android:id="@+id/bedroom_kongtiao"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="50dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:button="@drawable/kg"
+                    android:background="@null"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_sensor"
+                android:layout_marginLeft="60dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="10dp"
+                    app:srcCompat="@drawable/humidifier_icon" />
+
+                <TextView
+                    android:id="@+id/textView132"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imageView32"
+                    android:layout_alignStart="@+id/imageView32"
+                    android:layout_below="@+id/imageView32"
+                    android:text="加湿器"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ToggleButton
+                    android:id="@+id/bedroom_jiashiqi"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="50dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:button="@drawable/kg"
+                    android:background="@null"/>
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_sensor"
+                android:layout_marginLeft="60dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginStart="10dp"
+                    app:srcCompat="@drawable/light_icon" />
+
+                <TextView
+                    android:id="@+id/textView133"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imageView33"
+                    android:layout_alignStart="@+id/imageView33"
+                    android:layout_below="@+id/imageView33"
+                    android:text="射灯"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"/>
+
+                <ToggleButton
+                    android:id="@+id/bedroom_shedeng"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="50dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:button="@drawable/kg"
+                    android:background="@null"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_sensor"
+                android:layout_marginLeft="60dp">
+
+                <TextView
+                    android:id="@+id/textView85"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="温度模式"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"/>
+                <ToggleButton
+                    android:id="@+id/wendumoshi"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="50dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:button="@drawable/kg"
+                    android:background="@null"/>
+
+
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+</RelativeLayout>

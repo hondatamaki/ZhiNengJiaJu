@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.Demo.MainActivity"
+    android:background="@drawable/bg_2">
+
+    <Button
+        android:id="@+id/bedroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="21dp"
+        android:background="@drawable/ic_bedroom"
+        android:layout_marginStart="171dp"
+        />
+
+    <Button
+        android:id="@+id/hall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bedroom"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_living" />
+
+    <Button
+        android:id="@+id/kitchen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hall"
+        android:layout_alignBottom="@+id/hall"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_kitchen"
+        android:layout_marginEnd="172dp"
+        android:layout_marginRight="182dp"
+        />
+</RelativeLayout>
